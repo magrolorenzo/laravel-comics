@@ -1,12 +1,13 @@
-@extends("layouts.app")
-
-@section("content")
-    <header>
+<header>
         <div class="header-top">
-            {{-- 30px --}}
+            <div class="container">
+                <span>DC Power Visa</span>
+                <span>Additional DC Sites </span>
+            </div>
         </div>
         <div class="header-bottom">
-            {{-- 110px --}}
+            <div class="container">
+
+            </div>
         </div>
-    </header>
-@endsection
+</header>
