@@ -2,10 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: $main_font;
 }
 
+h1, h2, h3, h4, h5{
+    font-family: $font_condensed;
+}
+a{
+    text-decoration: none;
+}
+
+
 .container{
-    width: 80%;
+    width: 65%;
     margin: auto;
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
