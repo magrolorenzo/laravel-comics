@@ -1,18 +1,30 @@
 main{
 
+    background-color: $main_section_bg;
+
     .container{
         display: flex;
+        justify-content: space-around;
         flex-wrap: wrap;
+        padding: 60px 0 20px 0;
 
         .card{
-            border: 1px solid black;
+            flex-basis: 185px;
+            padding: 10px;
 
-            .poster-container{
-                width: 180px;
-                height: 180px;
-                overflow: hidden;
+            .comic-link{
 
-                img{
+                .poster-container{
+                    width: 180px;
+                    height: 180px;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    img{
+                    }
+                }
+
+                p{
+                    color: white;
                 }
             }
         }

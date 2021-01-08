@@ -18,16 +18,12 @@ a {
 }
 
 .container {
-  width: 65%;
+  width: 1240px;
   margin: auto;
 }
 
 .uppercase {
   text-transform: uppercase;
-}
-
-header {
-  margin-bottom: 50px;
 }
 
 header .header-top {
@@ -122,18 +118,35 @@ header .header-bottom .container .navbar .search-container {
   height: 100%;
 }
 
+#jumbotron {
+  height: 400px;
+  background-image: url("/images/jumbotron.jpg");
+}
+
+main {
+  background-color: #1c1c1c;
+}
+
 main .container {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
+  padding: 60px 0 20px 0;
 }
 
 main .container .card {
-  border: 1px solid black;
+  flex-basis: 185px;
+  padding: 10px;
 }
 
-main .container .card .poster-container {
+main .container .card .comic-link .poster-container {
   width: 180px;
   height: 180px;
   overflow: hidden;
+  margin-bottom: 20px;
+}
+
+main .container .card .comic-link p {
+  color: white;
 }
 

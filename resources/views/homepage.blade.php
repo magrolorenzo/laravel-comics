@@ -7,10 +7,12 @@
         <div class="container">
             @foreach ($comics as $comic)
                 <div class="card">
-                    <div class="poster-container">
-                        <img src="{{ $comic["thumb"] }}" alt="">
-                    </div>
-                    <p> {{ $comic["title"] }} </p>
+                    <a href="#" class="comic-link">
+                        <div class="poster-container">
+                            <img src="{{ $comic["thumb"] }}" alt="">
+                        </div>
+                        <p> {{ $comic["series"] }} </p>
+                    </a>
                 </div>
             @endforeach
         </div>
