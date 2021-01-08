@@ -62,43 +62,59 @@ header .header-top .container nav ul li a {
   font-size: 12px;
 }
 
+header .header-bottom {
+  height: 115px;
+  border-bottom: 1px solid grey;
+}
+
+header .header-bottom .container {
+  height: 100%;
+}
+
 header .header-bottom .container .navbar {
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 header .header-bottom .container .navbar .logo-container {
-  height: 100%;
   width: 80px;
 }
 
 header .header-bottom .container .navbar .logo-container img {
+  display: block;
   width: 100%;
 }
 
 header .header-bottom .container .navbar .menu {
+  height: 100%;
   width: 900px;
 }
 
 header .header-bottom .container .navbar .menu ul {
+  height: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+header .header-bottom .container .navbar .menu ul li {
+  height: 100%;
+}
+
 header .header-bottom .container .navbar .menu ul li a {
-  display: inline-block;
+  display: block;
   color: #464646;
   font-weight: bold;
-  line-height: 115px;
+  line-height: 110px;
 }
 
 header .header-bottom .container .navbar .menu ul li a.active,
 header .header-bottom .container .navbar .menu ul li a:hover {
   color: #0282f9;
-  border-bottom: 4px solid #0282f9;
+  border-bottom: 5px solid #0282f9;
 }
 
 header .header-bottom .container .navbar .search-container {

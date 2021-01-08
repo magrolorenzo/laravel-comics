@@ -1,4 +1,5 @@
 header{
+
     margin-bottom: 50px;
     // Header Top
     .header-top{
@@ -40,26 +41,39 @@ header{
     // Header Bottom
     .header-bottom{
 
+        height: 115px;
+        border-bottom: 1px solid grey;
+
         .container{
+
+            height: 100%;
 
             .navbar{
 
+                height: 100%;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
 
+                // Logo container
                 .logo-container{
-                    height: 100%;
+
                     width: 80px;
 
                     img{
+                        display: block;
                         width:  100%;
                     }
                 }
+
+                // Navbar menu
                 .menu{
+
+                    height: 100%;
                     width: 900px;
 
                     ul{
+                        height: 100%;
                         list-style-type: none;
                         display: flex;
                         justify-content: space-between;
@@ -67,15 +81,17 @@ header{
 
                         li{
 
+                            height: 100%;
                             a{
-                                display: inline-block;
+
+                                display: block;
                                 color: $main_grey;
                                 font-weight: bold;
-                                line-height:  115px;
+                                line-height: 110px;
 
                                 &.active, &:hover{
                                     color: $main_color;
-                                    border-bottom: 4px solid $main_color;
+                                    border-bottom: 5px solid $main_color;
                                 }
                             }
                         }
