@@ -19,4 +19,18 @@ Route::get('/', function () {
         'comics' => $comics
     ];
     return view('homepage', $data);
-});
+})->name("home");
+
+Route::get('/comic-infos/{id}', function ($id) {
+    // Recupero l'array dei fumetti
+    $comics = config("comics");
+    // con l'id recupero le info del fumetto
+    if(array_key_exists($id, $comics)){
+        $fumetto = $comics[$id];
+        $data =[
+            'comic' => $fumetto
+        ];
+        return view('comic-infos', $data);
+    }
+    return abort(404);
+})->name("infos");

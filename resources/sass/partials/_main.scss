@@ -3,28 +3,38 @@ main{
     background-color: $main_section_bg;
 
     .container{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
         padding: 60px 0 20px 0;
+        position: relative;
+        
+        .main-title{
+            background-color: $main_color;
+            display: inline-block;
+            position: absolute;
+        }
 
-        .card{
-            flex-basis: 185px;
-            padding: 10px;
+        .cards-container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
 
-            .comic-link{
+            .card{
+                flex-basis: 185px;
+                padding: 10px;
 
-                .poster-container{
-                    width: 180px;
-                    height: 180px;
-                    overflow: hidden;
-                    margin-bottom: 20px;
-                    img{
+                .comic-link{
+
+                    .poster-container{
+                        width: 180px;
+                        height: 180px;
+                        overflow: hidden;
+                        margin-bottom: 20px;
+                        img{
+                        }
                     }
-                }
 
-                p{
-                    color: white;
+                    p{
+                        color: white;
+                    }
                 }
             }
         }

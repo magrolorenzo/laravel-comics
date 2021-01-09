@@ -18,7 +18,9 @@
 
                 {{-- DC Logo --}}
                 <div class="logo-container">
-                    <img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo">
+                    <a href="{{route('home')}}">
+                        <img src="{{ asset('images/dc-logo.png') }}" alt="dc-logo">
+                    </a>
                 </div>
 
                 {{-- Main nav menu --}}

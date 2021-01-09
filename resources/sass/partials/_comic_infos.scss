@@ -1,0 +1,68 @@
+#comic-details{
+
+    .separator{
+        height: 80px;
+        background-color: $main_color;
+        position: relative;
+
+        .container{
+            width: 1020px;
+
+            .comic-poster-container{
+
+                height: 295px;
+                width: 195px;
+                border: 1px solid white;
+                position: absolute;
+                bottom: 20px;
+
+                .poster-wrapper{
+                    position: relative;
+                    height: 100%;
+
+                    span{
+                        position: absolute;
+                        color: white;
+                        background-color: $small_titles_bg;
+                    }
+                    .type{
+                        top:0;
+                        left: 0;
+                    }
+                        .view-gallery{
+                        bottom: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .details-wrapper{
+
+        border-bottom: 1px solid grey;
+
+        .container{
+            width: 1020px;
+            height: 100%;
+            padding: 70px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .details{
+                width: 680px;
+
+                .price{
+                    height: 50px;
+                    background-color: #55ba59;
+                }
+            }
+
+            .advert-container{
+                width: 300px;
+            }
+        }
+    }
+
+}

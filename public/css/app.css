@@ -128,25 +128,100 @@ main {
 }
 
 main .container {
+  padding: 60px 0 20px 0;
+  position: relative;
+}
+
+main .container .main-title {
+  background-color: #0282f9;
+  display: inline-block;
+  position: absolute;
+}
+
+main .container .cards-container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 60px 0 20px 0;
 }
 
-main .container .card {
+main .container .cards-container .card {
   flex-basis: 185px;
   padding: 10px;
 }
 
-main .container .card .comic-link .poster-container {
+main .container .cards-container .card .comic-link .poster-container {
   width: 180px;
   height: 180px;
   overflow: hidden;
   margin-bottom: 20px;
 }
 
-main .container .card .comic-link p {
+main .container .cards-container .card .comic-link p {
   color: white;
+}
+
+#comic-details .separator {
+  height: 80px;
+  background-color: #0282f9;
+  position: relative;
+}
+
+#comic-details .separator .container {
+  width: 1020px;
+}
+
+#comic-details .separator .container .comic-poster-container {
+  height: 295px;
+  width: 195px;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 20px;
+}
+
+#comic-details .separator .container .comic-poster-container .poster-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+#comic-details .separator .container .comic-poster-container .poster-wrapper span {
+  position: absolute;
+  color: white;
+  background-color: #00a9d9;
+}
+
+#comic-details .separator .container .comic-poster-container .poster-wrapper .type {
+  top: 0;
+  left: 0;
+}
+
+#comic-details .separator .container .comic-poster-container .poster-wrapper .view-gallery {
+  bottom: 0;
+  left: 0;
+}
+
+#comic-details .details-wrapper {
+  border-bottom: 1px solid grey;
+}
+
+#comic-details .details-wrapper .container {
+  width: 1020px;
+  height: 100%;
+  padding: 70px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#comic-details .details-wrapper .container .details {
+  width: 680px;
+}
+
+#comic-details .details-wrapper .container .details .price {
+  height: 50px;
+  background-color: #55ba59;
+}
+
+#comic-details .details-wrapper .container .advert-container {
+  width: 300px;
 }
 
