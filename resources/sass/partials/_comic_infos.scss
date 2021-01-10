@@ -22,25 +22,28 @@
 
                     span{
                         position: absolute;
+                        font-size: 13px;
+                        display: inline-block;
                         color: white;
+                        text-align: center;
+                        padding: 1px 3px;
                         background-color: $small_titles_bg;
                     }
                     .type{
                         top:0;
                         left: 0;
                     }
-                        .view-gallery{
+                    .view-gallery{
                         bottom: 0;
                         left: 0;
+                        width: 100%;
                     }
                 }
             }
         }
     }
 
-    .details-wrapper{
-
-        border-bottom: 1px solid grey;
+    #details-wrapper{
 
         .container{
             width: 1020px;
@@ -53,6 +56,9 @@
             .details{
                 width: 680px;
 
+                h1{
+                    color: $comic_title_color;
+                }
                 .price{
                     height: 50px;
                     background-color: #55ba59;
@@ -61,6 +67,84 @@
 
             .advert-container{
                 width: 300px;
+            }
+        }
+    }
+
+
+}
+
+#talent-and-specs{
+    height: 380px;
+    background-color: $credits_bg_color;
+
+    .container{
+        width: 1020px;
+        padding: 20px 0;
+
+        .infos-wrapper{
+            display: flex;
+            justify-content: space-between;
+
+            .talent, .specs{
+                width: 490px;
+                h2{
+                    margin-bottom: 25px;
+                }
+            }
+
+            .talent{
+
+
+                .art, .written{
+                    // width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 0;
+                    border-top: 1px solid lightgrey;
+                    font-size: 12px;
+
+                    .label{
+                        width: 30%;
+                    }
+                    .list{
+                        width: 70%;
+                        a{
+                            color: $small_titles_bg;
+                        }
+                    }
+                }
+
+
+
+
+
+                > div:last-child{
+                    border-bottom: 1px solid lightgrey;
+                }
+            }
+            .specs{
+
+                .series-info, .price-info, .sale-info{
+                    display: flex;
+                    padding: 10px 0;
+                    border-top: 1px solid lightgrey;
+                    font-size: 12px;
+
+                    .label{
+                        width: 30%;
+                    }
+                    .link{
+                        width: 70%;
+                        a{
+                            color: $small_titles_bg;
+                        }
+                    }
+                }
+
+                > div:last-child{
+                    border-bottom: 1px solid lightgrey;
+                }
             }
         }
     }

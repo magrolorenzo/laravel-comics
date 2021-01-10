@@ -185,7 +185,11 @@ main .container .cards-container .card .comic-link p {
 
 #comic-details .separator .container .comic-poster-container .poster-wrapper span {
   position: absolute;
+  font-size: 13px;
+  display: inline-block;
   color: white;
+  text-align: center;
+  padding: 1px 3px;
   background-color: #00a9d9;
 }
 
@@ -197,13 +201,10 @@ main .container .cards-container .card .comic-link p {
 #comic-details .separator .container .comic-poster-container .poster-wrapper .view-gallery {
   bottom: 0;
   left: 0;
+  width: 100%;
 }
 
-#comic-details .details-wrapper {
-  border-bottom: 1px solid grey;
-}
-
-#comic-details .details-wrapper .container {
+#comic-details #details-wrapper .container {
   width: 1020px;
   height: 100%;
   padding: 70px 0;
@@ -212,16 +213,104 @@ main .container .cards-container .card .comic-link p {
   align-items: center;
 }
 
-#comic-details .details-wrapper .container .details {
+#comic-details #details-wrapper .container .details {
   width: 680px;
 }
 
-#comic-details .details-wrapper .container .details .price {
+#comic-details #details-wrapper .container .details h1 {
+  color: #003f5e;
+}
+
+#comic-details #details-wrapper .container .details .price {
   height: 50px;
   background-color: #55ba59;
 }
 
-#comic-details .details-wrapper .container .advert-container {
+#comic-details #details-wrapper .container .advert-container {
   width: 300px;
+}
+
+#talent-and-specs {
+  height: 380px;
+  background-color: #f6f6f6;
+}
+
+#talent-and-specs .container {
+  width: 1020px;
+  padding: 20px 0;
+}
+
+#talent-and-specs .container .infos-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#talent-and-specs .container .infos-wrapper .talent,
+#talent-and-specs .container .infos-wrapper .specs {
+  width: 490px;
+}
+
+#talent-and-specs .container .infos-wrapper .talent h2,
+#talent-and-specs .container .infos-wrapper .specs h2 {
+  margin-bottom: 25px;
+}
+
+#talent-and-specs .container .infos-wrapper .talent .art,
+#talent-and-specs .container .infos-wrapper .talent .written {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-top: 1px solid lightgrey;
+  font-size: 12px;
+}
+
+#talent-and-specs .container .infos-wrapper .talent .art .label,
+#talent-and-specs .container .infos-wrapper .talent .written .label {
+  width: 30%;
+}
+
+#talent-and-specs .container .infos-wrapper .talent .art .list,
+#talent-and-specs .container .infos-wrapper .talent .written .list {
+  width: 70%;
+}
+
+#talent-and-specs .container .infos-wrapper .talent .art .list a,
+#talent-and-specs .container .infos-wrapper .talent .written .list a {
+  color: #00a9d9;
+}
+
+#talent-and-specs .container .infos-wrapper .talent > div:last-child {
+  border-bottom: 1px solid lightgrey;
+}
+
+#talent-and-specs .container .infos-wrapper .specs .series-info,
+#talent-and-specs .container .infos-wrapper .specs .price-info,
+#talent-and-specs .container .infos-wrapper .specs .sale-info {
+  display: flex;
+  padding: 10px 0;
+  border-top: 1px solid lightgrey;
+  font-size: 12px;
+}
+
+#talent-and-specs .container .infos-wrapper .specs .series-info .label,
+#talent-and-specs .container .infos-wrapper .specs .price-info .label,
+#talent-and-specs .container .infos-wrapper .specs .sale-info .label {
+  width: 30%;
+}
+
+#talent-and-specs .container .infos-wrapper .specs .series-info .link,
+#talent-and-specs .container .infos-wrapper .specs .price-info .link,
+#talent-and-specs .container .infos-wrapper .specs .sale-info .link {
+  width: 70%;
+}
+
+#talent-and-specs .container .infos-wrapper .specs .series-info .link a,
+#talent-and-specs .container .infos-wrapper .specs .price-info .link a,
+#talent-and-specs .container .infos-wrapper .specs .sale-info .link a {
+  color: #00a9d9;
+}
+
+#talent-and-specs .container .infos-wrapper .specs > div:last-child {
+  border-bottom: 1px solid lightgrey;
 }
 

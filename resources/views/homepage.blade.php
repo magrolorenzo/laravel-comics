@@ -14,7 +14,7 @@
 
                 @foreach ($comics as $id => $comic)
                     <div class="card">
-                        <a href="{{route("infos", $id)}}" class="comic-link">
+                        <a href="{{ route('infos', ['id' => $id]) }}" class="comic-link">
                             <div class="poster-container">
                                 <img src="{{ $comic["thumb"] }}" alt="">
                             </div>
