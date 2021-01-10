@@ -123,6 +123,30 @@ header .header-bottom .container .navbar .search-container {
   background-image: url("/images/jumbotron.jpg");
 }
 
+footer {
+  background-color: #303030;
+}
+
+footer .top-footer {
+  height: 400px;
+  background-image: url("/images/footer-bg.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer .top-footer .container {
+  width: 1240px;
+  height: 100%;
+  background-image: url("/images/dc-logo-bg.png");
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+footer .bottom-footer {
+  height: 110px;
+}
+
 main {
   background-color: #1c1c1c;
 }
